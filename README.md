@@ -118,7 +118,7 @@ Documentation is also available in [llms.txt format](https://llmstxt.org/), whic
 - [`llms-full.txt`](https://gofastmcp.com/llms-full.txt) contains the entire documentation. Note this may exceed the context window of your LLM.
 
 **Community:** Join our [Discord server](https://discord.gg/uu8dJCgttd) to connect with other FastMCP developers and share what you're building.
-
+This work is done for a course
 ## Contributing
 
 Start with [CONTRIBUTING.md](CONTRIBUTING.md) for accepted contributions and the issue-assignment workflow, then follow the [Contributing Guide](https://gofastmcp.com/development/contributing) for setup and validation. Agents should read [AGENTS.md](AGENTS.md).
