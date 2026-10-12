@@ -1,1 +1,28 @@
-The system cannot find the path specified.
+fastmcp version: 4.1.0
+[01:53:49.283] client: calling long_tool (tool timeout=1.0, client timeout=None)
+[01:53:50.352] tool: still working, step 1
+[01:53:51.353] tool: still working, step 2
+[01:53:52.354] tool: still working, step 3
+[01:53:53.354] tool: still working, step 4
+[01:53:54.354] tool: still working, step 5
+[01:53:54.355] tool: finished all 5 steps
+[10/13/26 01:53:54] WARNING  Tool 'long_tool' timed out after 1.0s. Consider using task=True for   function_tool.py:471
+                             long-running operations. See https://gofastmcp.com/servers/tasks                          
+[10/13/26 01:53:54] Error calling tool 'long_tool'                                                                     
+                    ┌─────────────────────────────── Traceback (most recent call last) ───────────────────────────────┐
+                    │ C:\Users\harsh\fastmcp-case-study\venv-4.1.0\Lib\site-packages\fastmcp\server\server.py:1467 in │
+                    │ call_tool                                                                                       │
+                    │                                                                                                 │
+                    │ C:\Users\harsh\fastmcp-case-study\venv-4.1.0\Lib\site-packages\fastmcp\tools\base.py:440 in     │
+                    │ _run                                                                                            │
+                    │                                                                                                 │
+                    │ C:\Users\harsh\fastmcp-case-study\venv-4.1.0\Lib\site-packages\fastmcp\tools\function_tool.py:4 │
+                    │ 36 in run                                                                                       │
+                    │                                                                                                 │
+                    │ C:\Users\harsh\fastmcp-case-study\venv-4.1.0\Lib\site-packages\fastmcp\tools\function_tool.py:4 │
+                    │ 76 in _run_body                                                                                 │
+                    └─────────────────────────────────────────────────────────────────────────────────────────────────┘
+                    MCPError: Tool 'long_tool' execution timed out after 1.0s                                          
+[01:53:54.560] client: got ERROR after 5.28s -> ToolError: Error calling tool 'long_tool': Tool 'long_tool' execution timed out after 1.0s
+[01:53:54.560] client: waiting 6s to see if the tool keeps running...
+[01:54:00.562] client: done waiting
