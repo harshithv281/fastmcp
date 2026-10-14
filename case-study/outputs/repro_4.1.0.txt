@@ -1,0 +1,20 @@
+[10/13/26 01:53:41] WARNING  Tool 'slow_tool' timed out after 1.0s. Consider using task=True for   function_tool.py:471
+                             long-running operations. See https://gofastmcp.com/servers/tasks                          
+[10/13/26 01:53:41] Error calling tool 'slow_tool'                                                                     
+                    ┌─────────────────────────────── Traceback (most recent call last) ───────────────────────────────┐
+                    │ C:\Users\harsh\fastmcp-case-study\venv-4.1.0\Lib\site-packages\fastmcp\server\server.py:1467 in │
+                    │ call_tool                                                                                       │
+                    │                                                                                                 │
+                    │ C:\Users\harsh\fastmcp-case-study\venv-4.1.0\Lib\site-packages\fastmcp\tools\base.py:440 in     │
+                    │ _run                                                                                            │
+                    │                                                                                                 │
+                    │ C:\Users\harsh\fastmcp-case-study\venv-4.1.0\Lib\site-packages\fastmcp\tools\function_tool.py:4 │
+                    │ 36 in run                                                                                       │
+                    │                                                                                                 │
+                    │ C:\Users\harsh\fastmcp-case-study\venv-4.1.0\Lib\site-packages\fastmcp\tools\function_tool.py:4 │
+                    │ 76 in _run_body                                                                                 │
+                    └─────────────────────────────────────────────────────────────────────────────────────────────────┘
+                    MCPError: Tool 'slow_tool' execution timed out after 1.0s                                          
+fastmcp version: 4.1.0
+elapsed: 3.30s
+ERROR: ToolError: Error calling tool 'slow_tool': Tool 'slow_tool' execution timed out after 1.0s
